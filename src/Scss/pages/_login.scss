@@ -1,0 +1,79 @@
+.login{
+    min-width: 500px;
+    min-height: 250px;
+    height: auto;
+    background-color: orange;
+    box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.3);
+    overflow: hidden;
+    border-radius: 0.8rem;
+
+    &__form{
+        box-sizing: border-box;
+        background-color: rgba(89, 243, 212, 0.6);
+    }
+
+    &__header{
+        font-size: 3rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &__input{
+        outline: none;
+        border: 1px solid orange;
+        display: block;
+        width: 100%;
+        font-size: 1.6rem;
+        border-radius: 0.8rem;
+        box-shadow: 0rem 0.1rem 0.6rem rgba(0,0,0,0.3);
+        transition: all 0.2s;
+
+        &:focus{
+            border: 3px solid orange;
+            box-shadow: 0rem 0.2rem 1.2rem rgba(0,0,0,0.3);
+        }
+    }
+
+    &__forgot{
+        font-size: 1.2rem;
+    }
+
+    &__buttonsContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+
+    &__button{
+        display: block;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        border: 0;
+        outline: none;
+        border-radius: 0.8rem;
+        box-shadow: 0rem 0.5rem 0.5rem rgba(0,0,0,0.3);
+        color: whitesmoke;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            transform: scale(1.02) translateY(-0.2rem);
+            box-shadow: 0rem 0.8rem 0.8rem rgba(0,0,0,0.3);
+        }
+
+        &:active{
+            transform: scale(0.98) translateY(0.4rem);
+            box-shadow: 0rem 0.2rem 0.2rem rgba(0,0,0,0.3);
+        }
+    }
+
+    &--register{
+        background-color: orange;
+    }
+
+    &--login{
+        background-color: green;
+    }
+}
+

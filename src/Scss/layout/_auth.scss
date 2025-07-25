@@ -1,0 +1,10 @@
+.auth{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    &__imageContainer{
+        background-image: url("../../../public/Assets/Images/Backgrounds/login.jpg");
+        background-position: center;
+        background-size: contain;
+    }
+}
